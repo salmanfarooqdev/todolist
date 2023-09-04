@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>To do List</h1>
+        <button class="menu">Menu</button>
+    </div>
+
+    <div class="main">
+        <div class="nav">
+            <div class="default">
+                <button class="inboxbtn btn">Inbox</button>
+                <button class="todaybtn btn">Today</button>
+                <button class="weekbtn btn">This week</button>
+            </div>
+
+            <h1 class="projectTitle">Projects</h1>
+            <div class="projectlist">
+                <button class="btn projectbtn">project name</button>
+            </div>
+            <button class="addproject btn"><b>+ Add Project</b></button>
+            <div class="newproject">
+                <input type="text" class="projectinput">
+                <div class="projectpopupbtn">
+                    <button class="add">Add</button>
+                    <button class="cancle">Cancle</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="inboxContent">
+
+                <h1 class="projectname">Inbox</h1>
+                <div class="tasklist">
+                </div>
+    
+                <button class="addtaskbtn">+ Add Task</button>
+    
+                <div class="addtaskpopup">
+                    <input type="text" class="addtaskinput">
+                    <div class="addtaskpopupbtn">
+                        <button class="addTask">Add</button>
+                        <button class="cancleTask">Cancle</button>
+                    </div>
+                </div>
+
+            </div> <!-- inbox ends-->
+
+            <div class="todayContent">
+
+                <h1 class="projectname">Today</h1>
+                <div class="todaytasklist">
+                </div>
+
+            </div> <!-- today ends-->
+
+            <div class="weekContent">
+
+                <h1 class="projectname">Week</h1>
+                <div class="weektasklist">
+                </div>
+
+            </div>
+          
+
+        </div>
+
+    </div>
+
+    <div class="footer">footer</div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
