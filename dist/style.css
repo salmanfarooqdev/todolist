@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #eee;
+
+}
+
+.header{
+    display: flex;
+   
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 22px;
+    color: aliceblue;
+    background-color: rgb(45, 41, 41);
+}
+
+.menu{
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 5px;
+    background-color: rgb(107, 110, 114);
+    color: aliceblue;
+    display: none;
+}
+.menu:hover{
+    background-color: rgb(69, 71, 74);
+}
+.addproject.active{
+    display: none;
+}
+.main{
+    flex:1;
+    display: flex;
+}
+
+.footer{
+    background-color: rgb(45, 41, 41);
+    padding: 5px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.nav{
+    background-color: rgb(208, 213, 217);
+    padding: 20px;
+    width: 300px;
+    min-width: 250px;
+}
+.default{
+    display: flex;
+    flex-direction: column  ;
+}
+.btn{
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    padding-left: 20px;
+    border: none;
+    margin-bottom:10px ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:0.3s;
+    text-align: start;
+    background-color: transparent;
+
+}
+.btn:hover{
+    background-color: rgb(175, 180, 185);
+}
+
+.projectTitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.newproject{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.newproject.active{
+    display: block;
+}
+.projectinput{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border: 1px solod black;
+    border-radius: 5px;
+}
+.projectpopupbtn{
+    /* width: 100%; */
+    display: flex;
+    gap:10px;   
+    margin-top: 10px;
+
+}
+.add, .cancle{
+    width: 50%;
+   font-size: 18px;
+   padding: 10px;
+   cursor: pointer;
+   border: none;
+   color: aliceblue;
+
+}
+.add{
+    background-color: rgb(133, 192, 133);
+}
+.cancle{
+    background-color: rgb(212, 87, 87);
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+.container{
+    padding: 20px 40px;
+    width:900px;
+    margin: 0 auto;
+    
+}
+
+.tasklist{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.task{
+    justify-content: space-between;
+    display: flex;
+    padding: 17px;
+    cursor: default;
+    border: none;
+   transition: 0.2s;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.task:hover{
+    background-color: #dedbdb;
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.date{
+    display: none;
+    cursor: pointer;
+}
+.date.active{
+    display: block;
+}
+.dueDate{
+   cursor: pointer;
+}
+.dueDate.active{
+    display: none;
+}
+
+.closebtn{
+    /* display: none; */
+}
+.addtaskbtn{
+    display: flex;
+    padding: 17px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.addtaskbtn.active{
+    display: none;
+}
+.addtaskbtn:hover{
+    background-color: #dedbdb;
+}
+.addtaskpopup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.addtaskpopup.active{
+    display: block;
+}
+.addtaskinput{
+    height: 40px;
+    padding: 12px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.addtaskpopupbtn{
+    margin-top: 10px;
+    display: flex;
+    gap:20px;
+}
+
+.addTask, .cancleTask{
+    width: 50%;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: aliceblue;
+}
+.addTask{
+    background-color: rgb(133, 192, 133);
+}
+.cancleTask{
+    background-color: rgb(212, 87, 87);
+}
+
+.addTask:hover{
+    background-color: rgb(116, 177, 116);
+}
+.add:hover{
+    background-color: rgb(116, 177, 116);
+}
+.cancleTask:hover{
+    background-color: rgb(177, 66, 66);
+
+}
+.cancle:hover{
+    background-color: rgb(177, 66, 66);
+
+}
+
+.nav{
+    background-color: rgb(208, 213, 217);
+    padding: 20px;
+    width: 300px;
+    min-width: 250px;
+}
+
+.striked {
+    text-decoration: line-through;
+}
+.selected-button {
+    background-color: darkgrey; 
+}
+
+
+
+
+@media (max-width:768px)
+{
+    .main{
+        flex-direction: column;
+        
+    }
+    .nav{
+        width: 100%;
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .nav.active{
+       display: block;
+    }
+}
